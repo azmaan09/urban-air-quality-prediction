@@ -1,0 +1,63 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+.ipynb_checkpoints/
+
+# Data (raw downloads can be large; keep structure via .gitkeep)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/external/*
+!data/external/.gitkeep
+!data/external/dataset_card.json
+
+# Model artifacts & MLflow
+models/artifacts/*
+!models/artifacts/.gitkeep
+mlruns/
+mlartifacts/
+*.pkl
+*.joblib
+*.model
+
+# Keep generated report markdown; also allow committed result artifacts for portfolio
+reports/figures/*
+!reports/figures/.gitkeep
+!reports/figures/*.png
+reports/tables/*
+!reports/tables/.gitkeep
+!reports/tables/*.csv
+!reports/tables/*.json
+
+# Environment / secrets
+.env
+.env.*
+*.log
+
+# Coverage / test
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.mplconfig/
+.vendor/

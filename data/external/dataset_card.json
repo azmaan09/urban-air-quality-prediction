@@ -1,0 +1,107 @@
+{
+  "name": "Beijing Multi-Site Air-Quality Data",
+  "uci_id": 501,
+  "url": "https://archive.ics.uci.edu/dataset/501/beijing+multi+site+air+quality+data",
+  "primary_site_summary": {
+    "n_rows": 35064,
+    "n_columns": 20,
+    "time_start": "2013-03-01 00:00:00+08:00",
+    "time_end": "2017-02-28 23:00:00+08:00",
+    "stations": [
+      "Aotizhongxin"
+    ],
+    "pollutant_columns": [
+      "PM2.5",
+      "PM10",
+      "SO2",
+      "NO2",
+      "CO",
+      "O3"
+    ],
+    "meteorology_columns": [
+      "TEMP",
+      "PRES",
+      "DEWP",
+      "RAIN",
+      "WSPM",
+      "wd",
+      "wd_deg"
+    ],
+    "missing_counts": {
+      "PM2.5": 925,
+      "PM10": 718,
+      "SO2": 935,
+      "NO2": 1023,
+      "CO": 1776,
+      "O3": 1719,
+      "TEMP": 20,
+      "PRES": 20,
+      "DEWP": 20,
+      "RAIN": 20,
+      "WSPM": 14,
+      "wd": 81,
+      "wd_deg": 81
+    },
+    "missing_pct": {
+      "PM2.5": 2.64,
+      "PM10": 2.05,
+      "SO2": 2.67,
+      "NO2": 2.92,
+      "CO": 5.07,
+      "O3": 4.9,
+      "TEMP": 0.06,
+      "PRES": 0.06,
+      "DEWP": 0.06,
+      "RAIN": 0.06,
+      "WSPM": 0.04,
+      "wd": 0.23,
+      "wd_deg": 0.23
+    }
+  },
+  "all_sites": {
+    "n_rows": 420768,
+    "stations": [
+      "Aotizhongxin",
+      "Changping",
+      "Dingling",
+      "Dongsi",
+      "Guanyuan",
+      "Gucheng",
+      "Huairou",
+      "Nongzhanguan",
+      "Shunyi",
+      "Tiantan",
+      "Wanliu",
+      "Wanshouxigong"
+    ],
+    "time_start": "2013-03-01 00:00:00+08:00",
+    "time_end": "2017-02-28 23:00:00+08:00"
+  },
+  "available_variables": {
+    "pollutants": [
+      "PM2.5",
+      "PM10",
+      "SO2",
+      "NO2",
+      "CO",
+      "O3"
+    ],
+    "meteorology": [
+      "TEMP",
+      "PRES",
+      "DEWP",
+      "RAIN",
+      "wd",
+      "WSPM"
+    ],
+    "derived_later": [
+      "RH (from TEMP+DEWP via Magnus formula)"
+    ],
+    "not_native": [
+      "relative humidity (derived)",
+      "explicit timezone offset column"
+    ]
+  },
+  "license": "CC BY 4.0 (via UCI redistribution)",
+  "citation": "Zhang, S., Guo, B., Dong, A., He, J., Xu, B., & Chen, S. X. (2017). Cautionary Tales on Air-Quality Improvement in Beijing. Proceedings of the Royal Society A, 473(2205)."
+}
